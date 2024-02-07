@@ -19,6 +19,7 @@
     font-weight: 500;
     margin-top: -50px;
     margin-bottom: 50px;
+   
 }
 .hero h1 span{
     color: red
@@ -68,4 +69,58 @@ select{
     outline: 0;
     border: 0;
     border-radius: 20px;
+}
+@media (min-width:350px) and (max-width:600px){
+    .hero{
+        width:100%;
+        min-height: 100vh;
+        background: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 28px;
+        font-weight: 530;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    textarea::placeholder{
+        font-size: 14px;
+        color: #ddd;
+    }
+    textarea{
+        width:90%;
+        height: 200px;
+        background: black;
+        color:#fff;
+        font-size: 12px;
+        border: 0;
+        outline: 0;
+        padding: 20px;
+        border-radius: 10px;
+        resize: none;
+        margin-bottom: 30px;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    button{
+        font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 35px;
+    }
+select{
+    font-size: 13px;
+    width: 60%;
+    height: 40px;
+    padding: 0 5px;
+}
+
 }
